@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const Login = (props) => {
@@ -6,14 +5,14 @@ const Login = (props) => {
     <Container>
       <Content>
         <CTA>
-          <CTALogoOne src='/images/cta-logo-one.svg' alt='cta-logo-one' />
+          <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
           <SignUp>GET ALL THERE</SignUp>
           <Description>
-            Get Premier Access to Rya and the Last Dragon movies with a Disney
-            Subscribtion.As of 08/20/1999, and all The Disney Bundle will be
-            increased by 1$.
+            Get Premier Access to Raya and the Last Dragon for an additional fee
+            with a Disney+ subscription. As of 03/26/21, the price of Disney+
+            and The Disney Bundle will increase by $1.
           </Description>
-          <CTALogoTwo src='/images/cta-logo-two.png' alt='cta-logo-two' />
+          <CTALogoTwo src="/images/cta-logo-two.png" alt="" />
         </CTA>
         <BgImage />
       </Content>
@@ -42,6 +41,7 @@ const Content = styled.div`
   padding: 80px 40px;
   height: 100%;
 `;
+
 const BgImage = styled.div`
   height: 100%;
   background-position: top;
@@ -70,19 +70,11 @@ const CTALogoOne = styled.img`
   width: 100%;
 `;
 
-const CTALogoTwo = styled.img`
-  max-width: 600px;
-  margin-bottom: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-  width: 100%;
-`;
-
 const SignUp = styled.a`
   font-weight: bold;
   color: #f9f9f9;
   background-color: #0063e5;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   width: 100%;
   letter-spacing: 1.5px;
   font-size: 18px;
@@ -97,9 +89,18 @@ const SignUp = styled.a`
 
 const Description = styled.p`
   color: hsla(0, 0%, 95.3%, 1);
-  font-size: 14px;
+  font-size: 11px;
   margin: 0 0 24px;
   line-height: 1.5;
   letter-spacing: 1.5px;
 `;
+
+const CTALogoTwo = styled.img`
+  max-width: 600px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+`;
+
 export default Login;
